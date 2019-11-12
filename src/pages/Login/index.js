@@ -31,7 +31,6 @@ export default function Login({ history }) {
             required
             placeholder="Seu e-mail"
             id="email"
-            value="email"
             onChange={(event) => setEmail(event.target.value)}
           />
           <input
@@ -39,7 +38,6 @@ export default function Login({ history }) {
             required
             placeholder="Sua senha"
             id="password"
-            value="password"
             onChange={(event) => setPassword(event.target.value)}
           />
           <div>

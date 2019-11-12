@@ -34,7 +34,6 @@ export default function Cadastro({ history }) {
             required
             placeholder="Seu nome"
             id="nome"
-            value="name"
             onChange={(event) => setNome(event.target.value)}
           />
           <input
@@ -42,7 +41,6 @@ export default function Cadastro({ history }) {
             required
             placeholder="Seu e-mail"
             id="email"
-            value="email"
             onChange={(event) => setEmail(event.target.value)}
           />
           <input
@@ -50,7 +48,6 @@ export default function Cadastro({ history }) {
             required
             placeholder="Sua senha"
             id="password"
-            value="password"
             onChange={(event) => setPassword(event.target.value)}
           />
           <div>
