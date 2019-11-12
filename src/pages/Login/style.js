@@ -8,7 +8,7 @@ export const Container = styled.div`
     width: 401px;
     margin-top: 50px;
     margin: 100px auto 50px auto;
-    background: rgba(0,0,0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     text-align: center;
     align-content: center;
     align-items: center;
@@ -71,7 +71,6 @@ export const Container = styled.div`
   }
 
   @media only screen and (max-width: 800px) {
-    
     h1 {
       padding-top: 10px;
       font-size: 26pt;

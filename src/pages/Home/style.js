@@ -8,7 +8,7 @@ export const Container = styled.div`
     width: 401px;
     margin-top: 50px;
     margin: 100px auto 50px auto;
-    background: rgba(0,0,0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     text-align: center;
     align-content: center;
     align-items: center;
@@ -31,7 +31,7 @@ export const Container = styled.div`
   input[type="text"] {
     border-style: solid;
     border-color: white;
-    color:white;
+    color: white;
     border-width: 0 0 2px 0;
     padding-top: 25px;
     width: 300px;
