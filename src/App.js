@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react"
 import Rotas from "./routes";
 import Global from "./styles/global";
 function App() {
@@ -6,7 +6,7 @@ function App() {
     <>
     <Rotas />
     <Global />
-  </>
+    </>
   );
 }
 

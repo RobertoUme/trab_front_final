@@ -5,22 +5,35 @@ import api from "../../services/api";
 import { Container } from "./style.js";
 import { Link } from "react-router-dom";
 import plus from "../../assets/plus.svg";
-export default function Login({ history }) {
+
+ 
+ 
+ export default function Login({ history }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   async function handleSubmit(event) {
-    event.preventDefault();
-    try {
-      await api.post("/sessions", {
+    event.preventDefault()
+
+    try{
+      const response = await api.post("/sessions", {
         email,
         password
       });
-      history.push("/home");
-    } catch (err) {
-      alert("Os dados inseridos são incorretos!");
+    
+  
+      const {token} = response.data;
+      console.log(token);
+      if(token){
+        localStorage.setItem('@CESTA/token',token);
+      }
     }
+    catch(err){
+      console.log('response',err)
+    }
+    history.push("/home")
   }
+  
   return (
     <Container>
       <section>
