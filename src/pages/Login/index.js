@@ -23,16 +23,15 @@ import plus from "../../assets/plus.svg";
     
   
       const {token} = response.data;
-      console.log(token);
       if(token){
         localStorage.setItem('@CESTA/token',token);
       }
+      history.push('/Home')
     }
     catch(err){
       console.log('response',err)
     }
-    history.push("/home")
-  }
+  } 
   
   return (
     <Container>

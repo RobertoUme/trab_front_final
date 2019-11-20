@@ -1,10 +1,10 @@
 import React from "react"
-import Rotas from "./routes";
+import Routes from "./routes/index";
 import Global from "./styles/global";
 function App() {
   return (
     <>
-    <Rotas />
+    <Routes />
     <Global />
     </>
   );

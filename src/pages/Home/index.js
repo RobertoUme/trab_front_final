@@ -1,11 +1,14 @@
 import React from "react";
 import { Container } from "./style.js";
 
-export default function Login() {
+export default function Home() {
   return (
     <Container>
       <section>
-        <h1>home</h1>
+          <p>Cadastrar Cliente</p>
+          <p>Cadastrar Serviço</p>
+          <p>Gerar Relatórios</p>
+          <p>outro negócio</p>
       </section>
     </Container>
   );
