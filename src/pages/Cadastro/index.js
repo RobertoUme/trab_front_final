@@ -18,6 +18,8 @@ export default function Cadastro({ history }) {
         email,
         password
       });
+      history.push("/Home");
+      alert("Cadastrado com sucesso");
     } catch (err) {
       alert("O e-mail já existe");
     }
@@ -26,44 +28,43 @@ export default function Cadastro({ history }) {
   return (
     <Container>
       <div className="Cadastrar_Cliente MatcSreen">
-      <nav className="Box_1">
-        <img src={logo} className="image" />
+        <nav className="Box_1">
+          <img src={logo} className="image" />
           <Link className="link" to="../Home">
             Voltar{" "}
           </Link>
         </nav>
-      <section>
-        <h1>Cadastro</h1>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            required
-            placeholder="Seu nome"
-            id="nome"
-            onChange={(event) => setNome(event.target.value)}
-          />
-          <input
-            type="email"
-            required
-            placeholder="Seu e-mail"
-            id="email"
-            onChange={(event) => setEmail(event.target.value)}
-          />
-          <input
-            type="password"
-            required
-            placeholder="Sua senha"
-            id="password"
-            onChange={(event) => setPassword(event.target.value)}
-          />
-          <div>
-            <button className="enviar">
-              <p>Criar Conta</p>
-            </button>
-          </div>
-        </form>
-
-      </section>
+        <section>
+          <h1>Cadastro</h1>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              required
+              placeholder="Seu nome"
+              id="nome"
+              onChange={event => setNome(event.target.value)}
+            />
+            <input
+              type="email"
+              required
+              placeholder="Seu e-mail"
+              id="email"
+              onChange={event => setEmail(event.target.value)}
+            />
+            <input
+              type="password"
+              required
+              placeholder="Sua senha"
+              id="password"
+              onChange={event => setPassword(event.target.value)}
+            />
+            <div>
+              <button className="enviar">
+                <p>Criar Conta</p>
+              </button>
+            </div>
+          </form>
+        </section>
       </div>
     </Container>
   );

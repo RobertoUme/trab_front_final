@@ -13,16 +13,16 @@ export const Container = styled.div`
     align-content: center;
     align-items: center;
   }
-  .image{
-    height:15%;
-    width:15%;
-    margin-right:30%;
-    margin-left:2%;
+  .image {
+    height: 15%;
+    width: 15%;
+    margin-right: 30%;
+    margin-left: 2%;
   }
-  h1{
+  h1 {
     font-size: 30pt;
-    margin-bottom:5%;
-    margin-top:10%;
+    margin-bottom: 5%;
+    margin-top: 10%;
   }
   body {
     margin: 0px;
@@ -55,17 +55,17 @@ export const Container = styled.div`
     margin-top: -1px;
   }
 
-  .enviar{
-    margin-top:20%;
+  .enviar {
+    margin-top: 20%;
     background-color: #408acf;
     color: #fffefe;
-    width:60%;
+    width: 60%;
   }
-  .enviar:hover{
-    margin-top:20%;
+  .enviar:hover {
+    margin-top: 20%;
     background-color: #408acf;
     color: #fffefe;
-    width:60%;
+    width: 60%;
   }
   button {
     font-size: 18px;
@@ -78,7 +78,6 @@ export const Container = styled.div`
     border: 0px;
     text-align: center;
     cursor: pointer;
-    
   }
 
   button:hover {
@@ -102,9 +101,8 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     padding: 10%, 50%, 10%, 50%;
-    
   }
-  form{
+  form {
     color: black;
     display: inline-block;
     height: 70%;
@@ -113,7 +111,8 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
   }
-  input[type="text"],[type="number"] {
+  input[type="text"],
+  [type="number"] {
     border-style: solid;
     border-color: white;
     border-width: 0 0 2px 0;
@@ -125,19 +124,18 @@ export const Container = styled.div`
   .link {
     font-size: 18px;
     margin: 10px;
-    margin-left:30%;
+    margin-left: 30%;
     padding: 10px 20px 10px 20px;
     margin-bottom: 5px;
     width: 200px;
     text-align: center;
     cursor: pointer;
-    
   }
 
   .link:hover {
     font-size: 18px;
     margin: 10px;
-    margin-left:30%;
+    margin-left: 30%;
     padding: 10px 20px 10px 20px;
     margin-bottom: 5px;
     width: 200px;
@@ -145,54 +143,54 @@ export const Container = styled.div`
     cursor: pointer;
   }
   @media (max-width: 500px) {
-    section{
+    section {
       width: 100%;
       height: 100vh;
       color: white;
       margin: 0;
-      border-radius:0;
-      padding-bottom:50px;
+      border-radius: 0;
+      padding-bottom: 50px;
     }
-    h1{
+    h1 {
       color: white;
-      margin-bottom:10%;
-      margin-top:10%;
-      font-size:40pt;
-      
+      margin-bottom: 10%;
+      margin-top: 10%;
+      font-size: 40pt;
     }
-    form{
-    color: white;
-    height: 50%;
-  }
-  input[type="text"],[type="number"] {
-    width: 70%;
-    border-color: white ;
-    padding-top: 40px;
-  }
-  .enviar{
-    margin-top:12%;
-    background-color: #408acf;
-    color: #fffefe;
-    width:300px;
-  }
-  .enviar:hover{
-    margin-top:12%;
-    background-color: #408acf;
-    color: #fffefe;
-    width:300px;
-  }
-  .image{
-    height:40%;
-    width:40%;
-    margin-right:10%;
-    margin-left:2%;
-  }
-  .link {
-    margin-left:15%;
-  }
+    form {
+      color: white;
+      height: 50%;
+    }
+    input[type="text"],
+    [type="number"] {
+      width: 70%;
+      border-color: white;
+      padding-top: 40px;
+    }
+    .enviar {
+      margin-top: 12%;
+      background-color: #408acf;
+      color: #fffefe;
+      width: 300px;
+    }
+    .enviar:hover {
+      margin-top: 12%;
+      background-color: #408acf;
+      color: #fffefe;
+      width: 300px;
+    }
+    .image {
+      height: 40%;
+      width: 40%;
+      margin-right: 10%;
+      margin-left: 2%;
+    }
+    .link {
+      margin-left: 15%;
+    }
 
-  .link:hover {
-    margin-left:15%;
-  }
+    .link:hover {
+      margin-left: 15%;
+    }
   }
 `;

@@ -22,7 +22,8 @@ export default function Cadastro({ history }) {
         estado,
         telefone
       });
-      history.push("./Clientes");
+      history.push("/Home");
+      alert("Cadastrado com sucesso");
     } catch (err) {
       alert("O CPF informado já foi cadastrado");
     }
@@ -35,53 +36,53 @@ export default function Cadastro({ history }) {
           <img src={logo} className="image" />
           <Link className="link" to="../Home">
             Voltar{" "}
-          </Link>  
+          </Link>
         </nav>
-          <div className="Box">
-            <section>
-          <h1>Cadastrar Cliente</h1>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            required
-            placeholder="Nome do Cliente"
-            id="nome"
-            onChange={(event) => setNome(event.target.value)}
-          />
-          <input
-            type="number"
-            required
-            placeholder="CPF do Cliente"
-            id="cpf"
-            onChange={(event) => setCpf(event.target.value)}
-          />
-          <input
-            type="text"
-            required
-            placeholder="Cidade do Cliente"
-            id="cidade"
-            onChange={(event) => setCidade(event.target.value)}
-          />
-           <input
-            type="text"
-            required
-            placeholder="Estado do Cliente"
-            id="Estado"
-            onChange={(event) => setEstado(event.target.value)}
-          />
-          <input
-            type="text"
-            required
-            placeholder="Telefone do Cliente"
-            id="telefone"
-            onChange={(event) => setTelefone(event.target.value)}
-          />
-            <button className="enviar">
-              <p>Cadastrar</p>
-            </button>
-        </form>
-        </section>
-          </div>
+        <div className="Box">
+          <section>
+            <h1>Cadastrar Cliente</h1>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                required
+                placeholder="Nome do Cliente"
+                id="nome"
+                onChange={event => setNome(event.target.value)}
+              />
+              <input
+                type="number"
+                required
+                placeholder="CPF do Cliente"
+                id="cpf"
+                onChange={event => setCpf(event.target.value)}
+              />
+              <input
+                type="text"
+                required
+                placeholder="Cidade do Cliente"
+                id="cidade"
+                onChange={event => setCidade(event.target.value)}
+              />
+              <input
+                type="text"
+                required
+                placeholder="Estado do Cliente"
+                id="Estado"
+                onChange={event => setEstado(event.target.value)}
+              />
+              <input
+                type="text"
+                required
+                placeholder="Telefone do Cliente"
+                id="telefone"
+                onChange={event => setTelefone(event.target.value)}
+              />
+              <button className="enviar">
+                <p>Cadastrar</p>
+              </button>
+            </form>
+          </section>
+        </div>
       </div>
     </Container>
   );

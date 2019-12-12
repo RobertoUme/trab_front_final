@@ -1,14 +1,14 @@
-import decode from 'jwt-decode';
-export const TOKEN_KEY ="@CESTA/token";
-export const USER = '@CESTA:user';
+import decode from "jwt-decode";
+export const TOKEN_KEY = "@CESTA/token";
+export const USER = "@CESTA:user";
 
 export const isAuthenticated = () => localStorage.getItem(TOKEN_KEY) !== null;
 
 export const getToken = () => localStorage.getItem(TOKEN_KEY);
 
-export const login = (token, user) =>{
-    localStorage.setItem(TOKEN_KEY,token);
-    localStorage.setItem(USER, JSON.stringify(user));
+export const login = (token, user) => {
+  localStorage.setItem(TOKEN_KEY, token);
+  localStorage.setItem(USER, JSON.stringify(user));
 };
 export const isTokenExpired = () => {
   try {
@@ -23,10 +23,11 @@ export const isTokenExpired = () => {
 
     return false;
   } catch (err) {
-    console.log('Expired check failed!');
+    console.log("Expired check failed!");
     return false;
-  }};
+  }
+};
 
-  export const logout = () => {
-    localStorage.removeItem(TOKEN_KEY);
-  };
+export const logout = () => {
+  localStorage.removeItem(TOKEN_KEY);
+};

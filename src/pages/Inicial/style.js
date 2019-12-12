@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: 100%;
   section {
     height: 500px;
-    width: 90%; 
+    width: 90%;
     margin: 50px auto 50px auto;
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.5);
@@ -12,20 +12,20 @@ export const Container = styled.div`
     align-content: center;
     align-items: center;
   }
-  .image{
-    height:15%;
-    width:15%;
+  .image {
+    height: 15%;
+    width: 15%;
     margin-right: 60%;
-    margin-left:2%;
+    margin-left: 2%;
   }
-  h1{
+  h1 {
     font-size: 30pt;
-    margin-bottom:5%;
-    margin-top:10%;
+    margin-bottom: 5%;
+    margin-top: 10%;
   }
-  table{
-    border-style:solid;
-    border-color:black;
+  table {
+    border-style: solid;
+    border-color: black;
     color: #000;
   }
   body {
@@ -58,42 +58,42 @@ export const Container = styled.div`
     min-height: 78px;
     margin-top: -1px;
   }
-  .link{
+  .link {
     background-color: #11fa61;
     color: #fffefe;
     text-align: center;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
-    width:16%;
+    width: 16%;
     font-weight: bold;
     padding: 14px 10px 14px 10px;
     height: 10%;
     box-shadow: 0px 1px grey;
   }
-  .link:hover{
+  .link:hover {
     background-color: #11fe33;
     color: #fffefe;
     text-align: center;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
-    width:16%;
+    width: 16%;
     font-weight: bold;
     padding: 14px 10px 14px 10px;
     height: 10%;
     box-shadow: 0px 1px grey;
   }
 
-  .enviar{
-    margin-top:20%;
+  .enviar {
+    margin-top: 20%;
     background-color: #408acf;
     color: #fffefe;
-    width:60%;
+    width: 60%;
   }
-  .enviar:hover{
-    margin-top:20%;
+  .enviar:hover {
+    margin-top: 20%;
     background-color: #408acf;
     color: #fffefe;
-    width:60%;
+    width: 60%;
   }
   button {
     font-size: 18px;
@@ -128,9 +128,8 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     padding: 10%, 50%, 10%, 50%;
-    
   }
-  form{
+  form {
     color: black;
     display: inline-block;
     height: 70%;
@@ -148,5 +147,4 @@ export const Container = styled.div`
     background: none;
     font-size: 16pt;
   }
-  
 `;

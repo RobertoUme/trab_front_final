@@ -3,18 +3,18 @@ export const Container = styled.div`
   height: 100%;
   width: 100%;
 
-  .image{
-    height:15%;
-    width:15%;
-    margin-right:30%;
-    margin-left:2%;
+  .image {
+    height: 15%;
+    width: 15%;
+    margin-right: 30%;
+    margin-left: 2%;
   }
-  .icon{
-    height:100px;
-    width:100px;
-    margin-top:35px;
+  .icon {
+    height: 100px;
+    width: 100px;
+    margin-top: 35px;
   }
-  h1{
+  h1 {
     font-size: 24pt;
   }
   body {
@@ -48,17 +48,17 @@ export const Container = styled.div`
     margin-top: -1px;
   }
 
-  .enviar{
-    margin-top:20%;
+  .enviar {
+    margin-top: 20%;
     background-color: #408acf;
     color: #fffefe;
-    width:60%;
+    width: 60%;
   }
-  .enviar:hover{
-    margin-top:20%;
+  .enviar:hover {
+    margin-top: 20%;
     background-color: #408acf;
     color: #fffefe;
-    width:60%;
+    width: 60%;
   }
   button {
     font-size: 18px;
@@ -71,7 +71,6 @@ export const Container = styled.div`
     border: 0px;
     text-align: center;
     cursor: pointer;
-    
   }
 
   button:hover {
@@ -85,25 +84,24 @@ export const Container = styled.div`
     border: 0px;
     text-align: center;
     cursor: pointer;
-
   }
-  .lugar{
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 45%; height: 250px;
-  font-size: 14px; 
-  text-decoration: none; 
-  text-align: center;
-  margin:10px;
-  text-shadow: 2px 2px 4px #666; 
-  color: #fff;
-  background-color: rgba(80,80, 80, 0.8);
-  border-radius:8px;
-  
+  .lugar {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+    height: 250px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+    text-shadow: 2px 2px 4px #666;
+    color: #fff;
+    background-color: rgba(80, 80, 80, 0.8);
+    border-radius: 8px;
   }
-  .a{
+  .a {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -111,12 +109,16 @@ export const Container = styled.div`
     align-items: center;
   }
 
-  .se1{
-  margin: auto; 
-  margin-top: 3%;
-  top: 0; right: 0; bottom: 0; left: 0;
-  width: 1100px; height: 554px;
-  z-index: 1;
+  .se1 {
+    margin: auto;
+    margin-top: 3%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 1100px;
+    height: 554px;
+    z-index: 1;
   }
   .Tela .Box {
     color: #ffffff;
@@ -125,9 +127,8 @@ export const Container = styled.div`
     align-items: center;
     font-size: 14px;
     display: flex;
-    
   }
-  form{
+  form {
     color: black;
     display: inline-block;
     height: 70%;
@@ -144,36 +145,35 @@ export const Container = styled.div`
     width: 60%;
     background: none;
     font-size: 16pt;
-  } 
+  }
   @media (max-width: 800px) {
-  .lugar{
-  display: inline-block;
-  width: 90%; height: 100px;
-  font-size: 14px; 
-  text-decoration: none; 
-  text-align: center;
-  margin:10px;
-  text-shadow: 2px 2px 4px #666; 
-    
-  }
-  .a{
-    padding-left:10px;
-    padding-top:20px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    
+    .lugar {
+      display: inline-block;
+      width: 90%;
+      height: 100px;
+      font-size: 14px;
+      text-decoration: none;
+      text-align: center;
+      margin: 10px;
+      text-shadow: 2px 2px 4px #666;
     }
-  .icon{
-    height:60px;
-    width:60px;
-    margin-top:0;
-  }
-  h1{
-    font-size: 24pt;
-    margin-left:10px;
-  }
+    .a {
+      padding-left: 10px;
+      padding-top: 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: center;
+    }
+    .icon {
+      height: 60px;
+      width: 60px;
+      margin-top: 0;
+    }
+    h1 {
+      font-size: 24pt;
+      margin-left: 10px;
+    }
   }
 `;

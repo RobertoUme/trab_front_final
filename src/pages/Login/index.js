@@ -3,35 +3,29 @@ import React, { useState } from "react";
 import api from "../../services/api";
 
 import { Container } from "./style.js";
-import { Link } from "react-router-dom";
-import plus from "../../assets/icones/plus.svg";
 
- 
- 
- export default function Login({ history }) {
+export default function Login({ history }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   async function handleSubmit(event) {
-    event.preventDefault()
+    event.preventDefault();
 
-    try{
+    try {
       const response = await api.post("/sessions", {
         email,
         password
       });
-    
-  
+
       const { token, user: userData } = response.data;
-      if(token){
-        localStorage.setItem('@CESTA/token',token, userData);
+      if (token) {
+        localStorage.setItem("@CESTA/token", token, userData);
       }
-      history.push('/Home')
+      history.push("/Home");
+    } catch (err) {
+      console.log("response", err);
     }
-    catch(err){
-      console.log('response',err)
-    }
-  } 
+  }
   //check box onChange={event => setAdmin(isAdmin)}
   return (
     <Container>
@@ -43,14 +37,14 @@ import plus from "../../assets/icones/plus.svg";
             required
             placeholder="Seu e-mail"
             id="email"
-            onChange={(event) => setEmail(event.target.value)}
+            onChange={event => setEmail(event.target.value)}
           />
           <input
             type="password"
             required
             placeholder="Sua senha"
             id="password"
-            onChange={(event) => setPassword(event.target.value)}
+            onChange={event => setPassword(event.target.value)}
           />
           <div>
             <button>

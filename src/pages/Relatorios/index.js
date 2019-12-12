@@ -27,8 +27,8 @@ export default function Relatorios({ history }) {
           </Link>
         </nav>
         <div className="Box">
-        <section>
-          <table>
+          <section>
+            <table>
               <tr>
                 <th>Nome do Cliente</th>
                 <th>CPF</th>
@@ -50,8 +50,7 @@ export default function Relatorios({ history }) {
                     valor={relatorio.valor}
                   />
                 ))}
-                
-          </table>
+            </table>
           </section>
         </div>
       </div>

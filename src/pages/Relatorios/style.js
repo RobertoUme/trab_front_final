@@ -3,7 +3,7 @@ export const Container = styled.div`
   height: 100%;
   width: 100%;
   section {
-    width:80%;
+    width: 80%;
     margin-top: 50px;
     margin: 100px auto 50px auto;
     background: rgba(0, 0, 0, 0.5);
@@ -11,18 +11,18 @@ export const Container = styled.div`
     text-align: left;
     align-content: center;
     align-items: center;
-    overflow-x:auto
+    overflow-x: auto;
   }
-  .image{
-    height:15%;
-    width:15%;
-    margin-right:30%;
-    margin-left:2%;
+  .image {
+    height: 15%;
+    width: 15%;
+    margin-right: 30%;
+    margin-left: 2%;
   }
-  h1{
+  h1 {
     font-size: 30pt;
-    margin-bottom:5%;
-    margin-top:10%;
+    margin-bottom: 5%;
+    margin-top: 10%;
   }
   body {
     margin: 0px;
@@ -54,29 +54,29 @@ export const Container = styled.div`
     min-height: 78px;
     margin-top: -1px;
   }
-  .Cadastrar_Cliente .PButton{
+  .Cadastrar_Cliente .PButton {
     background-color: #408acf;
     color: #fffefe;
     text-align: center;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
-    width:16%;
+    width: 16%;
     font-weight: bold;
     padding: 14px 10px 14px 10px;
     height: 10%;
     box-shadow: 0px 1px grey;
   }
-  .enviar{
-    margin-top:20%;
+  .enviar {
+    margin-top: 20%;
     background-color: #408acf;
     color: #fffefe;
-    width:60%;
+    width: 60%;
   }
-  .enviar:hover{
-    margin-top:20%;
+  .enviar:hover {
+    margin-top: 20%;
     background-color: #408acf;
     color: #fffefe;
-    width:60%;
+    width: 60%;
   }
   button {
     font-size: 18px;
@@ -111,9 +111,8 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     padding: 10%, 50%, 10%, 50%;
-    
   }
-  form{
+  form {
     color: black;
     display: inline-block;
     height: 70%;
@@ -131,49 +130,49 @@ export const Container = styled.div`
     background: none;
     font-size: 16pt;
   }
-  td{
-    padding:5px;
+  td {
+    padding: 5px;
   }
-th {
-  font-size: 12pt;
-  padding:7px;
-  color: #fff;
-  line-height: 1.4;
-  background-color: #6c7ae0;
-}
+  th {
+    font-size: 12pt;
+    padding: 7px;
+    color: #fff;
+    line-height: 1.4;
+    background-color: #408acf;
+  }
 
-tr:nth-child(odd) {
-  color: #000;
-  background-color: rgb(248,246,255);
-}
-tr:nth-child(even) {
-  color: #000;
-  background-color: #e7e6ff;
-}
-table{
-  width: 100%;
-  min-width:1000px;
-  border-collapse: collapse;
-}
-table th, table td:last-child {
-     border-right: 0;
+  tr:nth-child(odd) {
+    color: #000;
+    background-color: rgb(255, 255, 255);
+  }
+  tr:nth-child(even) {
+    color: #000;
+    background-color: #eff6ff;
+  }
+  table {
+    width: 100%;
+    min-width: 1000px;
+    border-collapse: collapse;
+  }
+  table th,
+  table td:last-child {
+    border-right: 0;
   }
   .link {
     font-size: 18px;
     margin: 10px;
-    margin-left:30%;
+    margin-left: 30%;
     padding: 10px 20px 10px 20px;
     margin-bottom: 5px;
     width: 200px;
     text-align: center;
     cursor: pointer;
-    
   }
 
   .link:hover {
     font-size: 18px;
     margin: 10px;
-    margin-left:30%;
+    margin-left: 30%;
     padding: 10px 20px 10px 20px;
     margin-bottom: 5px;
     width: 200px;
@@ -181,11 +180,12 @@ table th, table td:last-child {
     cursor: pointer;
   }
   @media (max-width: 500px) {
-  .link {
-    margin-left:15%;
-  }
+    .link {
+      margin-left: 15%;
+    }
 
-  .link:hover {
-    margin-left:15%;
-  }}
+    .link:hover {
+      margin-left: 15%;
+    }
+  }
 `;
