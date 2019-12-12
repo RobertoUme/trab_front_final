@@ -1,25 +1,28 @@
-import React from 'react';
-import { BrowserRouter, Switch} from 'react-router-dom';
+import React from "react";
+import { BrowserRouter, Switch } from "react-router-dom";
 
-import Route from './Route';
+import Route from "./Route";
 
 import Login from "../pages/Login";
 import Cadastro from "../pages/Cadastro";
+import Clientes from "../pages/Clientes";
+import Servicos from "../pages/Servico";
+import Relatorio from "../pages/Relatorios";
+import Inicial from "../pages/Inicial";
 import Home from "../pages/Home";
 
-
-
-export default function Routes(){
-  return(
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={Login} />
-          <Route path="/Cadastro" component={Cadastro} />
-          <Route path="/Home" component={Home} isPrivate/>
-
-        </Switch>
-      </BrowserRouter>
-
-      
+export default function Routes() {
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route path="/Login" component={Login} />
+        <Route path="/Cadastro" component={Cadastro} isPrivate />
+        <Route path="/Clientes" component={Clientes} isPrivate />
+        <Route path="/Servicos" component={Servicos} isPrivate />
+        <Route path="/Relatorio" component={Relatorio} isPrivate />
+        <Route exact path="/" component={Inicial} />
+        <Route path="/Home" component={Home} isPrivate />
+      </Switch>
+    </BrowserRouter>
   );
-  }
+}

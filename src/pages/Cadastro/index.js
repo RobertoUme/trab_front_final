@@ -4,7 +4,7 @@ import api from "../../services/api";
 
 import { Container } from "./style.js";
 import { Link } from "react-router-dom";
-import login from "../../assets/login.svg";
+import logo from "../../assets/logo.png";
 export default function Cadastro({ history }) {
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
@@ -13,12 +13,11 @@ export default function Cadastro({ history }) {
   async function handleSubmit(event) {
     event.preventDefault();
     try {
-      await api.post("/u", {
+      await api.post("/usuario", {
         nome,
         email,
         password
       });
-      history.push("./");
     } catch (err) {
       alert("O e-mail já existe");
     }
@@ -26,6 +25,13 @@ export default function Cadastro({ history }) {
 
   return (
     <Container>
+      <div className="Cadastrar_Cliente MatcSreen">
+      <nav className="Box_1">
+        <img src={logo} className="image" />
+          <Link className="link" to="../Home">
+            Voltar{" "}
+          </Link>
+        </nav>
       <section>
         <h1>Cadastro</h1>
         <form onSubmit={handleSubmit}>
@@ -51,18 +57,14 @@ export default function Cadastro({ history }) {
             onChange={(event) => setPassword(event.target.value)}
           />
           <div>
-            <button>
+            <button className="enviar">
               <p>Criar Conta</p>
             </button>
           </div>
         </form>
-        <nav>
-          <Link className="link" to="../">
-            <img src={login} alt="Login" />
-            <p>Voltar a login</p>
-          </Link>
-        </nav>
+
       </section>
+      </div>
     </Container>
   );
 }

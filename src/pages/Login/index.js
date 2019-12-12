@@ -4,7 +4,7 @@ import api from "../../services/api";
 
 import { Container } from "./style.js";
 import { Link } from "react-router-dom";
-import plus from "../../assets/plus.svg";
+import plus from "../../assets/icones/plus.svg";
 
  
  
@@ -22,9 +22,9 @@ import plus from "../../assets/plus.svg";
       });
     
   
-      const {token} = response.data;
+      const { token, user: userData } = response.data;
       if(token){
-        localStorage.setItem('@CESTA/token',token);
+        localStorage.setItem('@CESTA/token',token, userData);
       }
       history.push('/Home')
     }
@@ -32,7 +32,7 @@ import plus from "../../assets/plus.svg";
       console.log('response',err)
     }
   } 
-  
+  //check box onChange={event => setAdmin(isAdmin)}
   return (
     <Container>
       <section>
@@ -58,13 +58,6 @@ import plus from "../../assets/plus.svg";
             </button>
           </div>
         </form>
-
-        <nav>
-          <Link className="link" to="../Cadastro">
-            <img src={plus} alt="Plus" />
-            <p>Cadastre-se</p>
-          </Link>
-        </nav>
       </section>
     </Container>
   );

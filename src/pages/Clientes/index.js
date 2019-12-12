@@ -2,66 +2,87 @@ import React, { useState } from "react";
 
 import api from "../../services/api";
 
+import logo from "../../assets/logo.png";
 import { Container } from "./style.js";
 import { Link } from "react-router-dom";
-import login from "../../assets/login.svg";
 export default function Cadastro({ history }) {
   const [nome, setNome] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [cpf, setCpf] = useState("");
+  const [cidade, setCidade] = useState("");
+  const [estado, setEstado] = useState("");
+  const [telefone, setTelefone] = useState("");
 
   async function handleSubmit(event) {
     event.preventDefault();
     try {
-      await api.post("/u", {
+      await api.post("/cliente", {
         nome,
-        email,
-        password
+        cpf,
+        cidade,
+        estado,
+        telefone
       });
-      history.push("./");
+      history.push("./Clientes");
     } catch (err) {
-      alert("O e-mail já existe");
+      alert("O CPF informado já foi cadastrado");
     }
   }
 
   return (
     <Container>
-      <section>
+      <div className="Cadastrar_Cliente MatcSreen">
+        <nav className="Box_1">
+          <img src={logo} className="image" />
+          <Link className="link" to="../Home">
+            Voltar{" "}
+          </Link>  
+        </nav>
+          <div className="Box">
+            <section>
+          <h1>Cadastrar Cliente</h1>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
             required
-            placeholder="Insira o nome do cliente"
+            placeholder="Nome do Cliente"
+            id="nome"
             onChange={(event) => setNome(event.target.value)}
           />
           <input
-            type="text"
+            type="number"
             required
-            placeholder="Insira a cidade do cliente"
-            onChange={(event) => setEmail(event.target.value)}
+            placeholder="CPF do Cliente"
+            id="cpf"
+            onChange={(event) => setCpf(event.target.value)}
           />
           <input
             type="text"
             required
-            placeholder="Insira o estado do cliente"
-            onChange={(event) => setPassword(event.target.value)}
+            placeholder="Cidade do Cliente"
+            id="cidade"
+            onChange={(event) => setCidade(event.target.value)}
+          />
+           <input
+            type="text"
+            required
+            placeholder="Estado do Cliente"
+            id="Estado"
+            onChange={(event) => setEstado(event.target.value)}
           />
           <input
             type="text"
             required
-            placeholder="Insira o tamanho do poço"
-            onChange={(event) => setPassword(event.target.value)}
+            placeholder="Telefone do Cliente"
+            id="telefone"
+            onChange={(event) => setTelefone(event.target.value)}
           />
-          <div>
-            <button>
-              <p>Cadastrar cliente</p>
+            <button className="enviar">
+              <p>Cadastrar</p>
             </button>
-          </div>
         </form>
-        <nav>
-
-        </nav>
-      </section>
+        </section>
+          </div>
+      </div>
     </Container>
   );
 }
